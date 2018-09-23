@@ -6,7 +6,6 @@
  *  @brief  Description: This is the main code of
  *                       PID controller implementation.
  */
-#include<iostream>
 #include "pidController.h"
 
 int main() {
