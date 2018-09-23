@@ -8,12 +8,22 @@
 [Navigator]-Bhargav Dandamudi(bhargav-umd) 
 ```
 ## Overview
+```
+Desiging a PID controller to achieve a setpoint velocity.
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
-
+Following if the block diagram for the working of PID algorithm.
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/971px-PID_en.svg.png)
+```
+##Working
+```
+The controller calculates error which we get from the setpoint value and the actual value
+Now, 3 parameters are calculated for getting the actual velocity such that the error is minimized and the actual value reaches the setpoint value.
+1) The Proportional parameter: This parameter gets affected directly by the error. So, for larger errors we get a large change in the actual value.
+2) The integral parameter: This parameter is defined as the integral of parameter over time. So, when the error is less, the proportional term tends to reduce and the effects of the integral term comes to be visible.
+3) The derivative term: This parameter is defines as the derivative of the error with respect to time. It provides a dampering effect, so for rapid changes in the error, this provides a greater controlling effect and dampers the error.
+The formula for PID algorithm is:
+![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/69072d4013ea8f14ab59a8283ef216fb958870b2)
+```
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/dpiet/cpp-boilerplate
