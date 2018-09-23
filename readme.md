@@ -2,7 +2,11 @@
 [![Build Status](https://travis-ci.org/KrishnaBhatu/Week4808x.svg?branch=master)](https://travis-ci.org/KrishnaBhatu/Week4808x)
 [![Coverage Status](https://coveralls.io/repos/github/KrishnaBhatu/Week4808x/badge.svg)](https://coveralls.io/github/KrishnaBhatu/Week4808x)
 ---
-
+## Author
+```
+[Driver]-Krishna Suresh Bhatu(KrishnaBhatu)
+[Navigator]-Bhargav Dandamudi(bhargav-umd) 
+```
 ## Overview
 
 Simple starter C++ project with:
