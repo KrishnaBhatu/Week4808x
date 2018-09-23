@@ -10,7 +10,7 @@
 ## Overview
 ```
 Desiging a PID controller to achieve a setpoint velocity.
-![Alt text](PID_blockDiagram.png?raw=true "PID Block Diagram")
+![Alt text]( Week4808x/PID_blockDiagram.png ?raw=true "PID Block Diagram")
 ```
 ##Working
 ```
@@ -19,7 +19,7 @@ Now, 3 parameters are calculated for getting the actual velocity such that the e
 1) The Proportional parameter: This parameter gets affected directly by the error. So, for larger errors we get a large change in the actual value.
 2) The integral parameter: This parameter is defined as the integral of parameter over time. So, when the error is less, the proportional term tends to reduce and the effects of the integral term comes to be visible.
 3) The derivative term: This parameter is defines as the derivative of the error with respect to time. It provides a dampering effect, so for rapid changes in the error, this provides a greater controlling effect and dampers the error.
-![Alt text](PID_formula.jpeg?raw=true "PID Formula")
+![Alt text]( Week4808x/PID_formula.jpeg?raw=true "PID Formula")
 ```
 ## Standard install via command-line
 ```
