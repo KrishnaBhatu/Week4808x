@@ -20,6 +20,7 @@ class PidController {
  public:
   double errorPrevious;
   double result;
+  PidController();
   /// @param First parameter is KP value
   /// @param Second parameter is KD value
   /// @param Third parameter is KI value

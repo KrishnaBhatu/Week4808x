@@ -8,6 +8,8 @@
  */
 #include<iostream>
 #include "pidController.h"
+PidController::PidController() {
+}
 /// @brief This constructor when called initializes
 ///        the PID parameters
 /// @param propConst This is the Kp value
