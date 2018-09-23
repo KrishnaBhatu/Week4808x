@@ -12,7 +12,7 @@
 Desiging a PID controller to achieve a setpoint velocity.
 
 Following if the block diagram for the working of PID algorithm.
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/971px-PID_en.svg.png)
+<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/PID_en.svg/971px-PID_en.svg.png" style = "width:100px ; height:100px " />
 ```
 ##Working
 ```
@@ -22,7 +22,7 @@ Now, 3 parameters are calculated for getting the actual velocity such that the e
 2) The integral parameter: This parameter is defined as the integral of parameter over time. So, when the error is less, the proportional term tends to reduce and the effects of the integral term comes to be visible.
 3) The derivative term: This parameter is defines as the derivative of the error with respect to time. It provides a dampering effect, so for rapid changes in the error, this provides a greater controlling effect and dampers the error.
 The formula for PID algorithm is:
-![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/69072d4013ea8f14ab59a8283ef216fb958870b2)
+<img src = "https://wikimedia.org/api/rest_v1/media/math/render/svg/69072d4013ea8f14ab59a8283ef216fb958870b2)" style = "width:100px ; height:100px " />
 ```
 ## Standard install via command-line
 ```
