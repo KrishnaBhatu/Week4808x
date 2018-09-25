@@ -68,3 +68,9 @@ This generates a index.html page in the build/coverage sub-directory that can be
 
     2. Run cpplint $( find . -name \*.h -or -name \*.cpp | grep -vE -e "^./build/" -e "^./vendor/" -e "^./docs/" -e "^./results" )
 
+## To-Do
+
+- Need to tune Kp, Ki and Kd values which give more optimal results
+- Make changes such that user can tune the Kp, Kd and Ki values
+- Make tests for respective Kp, Ki and Kd values 
+- Tune PID values as per Zeigler-Nicholas Method for best results
