@@ -8,17 +8,6 @@
 #include <pidController.h>
 
 /*
- * @brief This is an empty constructor
- */
-PidController::PidController() {
-  this->kp = 0;
-  this->kd = 0;
-  this->ki = 0;
-  result = 0;
-  errorPrevious = 0;
-}
-
-/*
  * @brief This constructor when called initializes the PID parameters
  *
  * @param propConst This is the Kp value
@@ -53,9 +42,6 @@ double PidController::calVelocity(double setVel, double actVel) {
   double KD = this->kd;
   double KI = this->ki;
   double error = setVel - actVel;
-
-  // This parameters limits the PID parameter
-  double max = 100, min = -100;
   double changeTime = 0.1;
 
   // Proportional term
@@ -73,12 +59,6 @@ double PidController::calVelocity(double setVel, double actVel) {
 
   // Calcuation of PID parameter
   double newVel = P + D + I;
-
-  // Limiting condition for over and under shooting
-  if (newVel > max)
-    newVel = max;
-  if (newVel < min)
-    newVel = min;
 
   // Updating error value
   errorPrevious = error;
