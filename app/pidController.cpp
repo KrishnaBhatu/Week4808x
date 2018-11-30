@@ -107,15 +107,14 @@ double PidController::calVelocity(double setVel, double actVel) {
  */
 
 bool PidController::velWithAddAPI(double calVal, double desVal) {
-	///Calling the method of service class via the object pointer
-	bool test = newValCal->checkResult(calVal, desVal);
-	if(test) {
-		std::cout<<"Desired Value is Achieved" << std::endl;
-	}
-	else{
-		std::cout<<"Desired Value is NOT Achieved" << std::endl;
-	}
-	return test;
+  /// Calling the method of service class via the object pointer
+  bool test = newValCal->checkResult(calVal, desVal);
+  if (test) {
+    std::cout << "Desired Value is Achieved" << std::endl;
+  } else {
+    std::cout << "Desired Value is NOT Achieved" << std::endl;
+  }
+  return test;
 }
 
 

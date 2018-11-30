@@ -68,6 +68,6 @@ int main() {
   }
   flag = carAB.velWithAddAPI(actualVelocity, setVelocity);
   std::cout << flag << std::endl;
-  std::cout << carAB.velWithAddAPI(10.0,10.0) << std::endl;
+  std::cout << carAB.velWithAddAPI(10.0, 10.0) << std::endl;
   return 0;
 }

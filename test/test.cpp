@@ -30,10 +30,11 @@
   *  @brief This is the declaration of test class. 
   */
 
-#include<gtest/gtest.h>
-#include"../include/pidController.h"
-#include"../include/newVal.h"
 #include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#include "../include/pidController.h"
+#include "../include/newVal.h"
+
 using ::testing::Return;
 using ::testing::_;
 using ::testing::AtLeast;
@@ -43,8 +44,8 @@ PidController test1(0.1, 0.01, 0.5);
 /// Creating the chile of service NewVal
 class Mocktest : public NewVal {
  public:
-  MOCK_METHOD2(checkResult,bool(double calVel, double desVel));
-}; 
+  MOCK_METHOD2(checkResult, bool(double calVel, double desVel));
+};
 
 /// Test for checking the PID algorithm
 TEST(PidControllerTest, PIDAlgoTest) {
@@ -62,8 +63,8 @@ TEST(PidControllerTest, PIDinit) {
 /// Test of the service using the mock class
 TEST(PidControllerTest, APITest) {
   Mocktest mockobj;
-  EXPECT_CALL(mockobj, checkResult(_,_)).Times(AtLeast(1));
+  EXPECT_CALL(mockobj, checkResult(_, _)).Times(AtLeast(1));
   PidController pidObj(&mockobj);
-  EXPECT_FALSE(pidObj.velWithAddAPI(30.0,40.0));
+  EXPECT_FALSE(pidObj.velWithAddAPI(30.0, 40.0));
 }
 

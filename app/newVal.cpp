@@ -34,11 +34,11 @@
   *  Source code for definition of the service class, it defines the check
   *  method which will be implemented by the clients. 
   */
-#include <iostream>
-#include <math.h>    
 #include "../include/newVal.h"
+#include <math.h>
+#include <iostream>
+
 NewVal::NewVal() {
-  
 }
 NewVal::~NewVal() {
 }
@@ -51,11 +51,11 @@ NewVal::~NewVal() {
  *         desired result.           
  */
 bool NewVal::checkResult(double calVel, double desVel) {
-		bool flag;
-		if(fabs(calVel - desVel) < 1){
-			flag = true;
-		}else{
-			flag = false;
-		}
-	return flag;
+  bool flag;
+  if (fabs(calVel - desVel) < 1) {
+    flag = true;
+  } else {
+      flag = false;
+  }
+  return flag;
 }

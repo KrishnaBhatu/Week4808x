@@ -70,8 +70,13 @@ class PidController {
    * @brief It is a constructor that initialises the object with the object
    *        pointer given by the object definition.
    */
-  PidController(NewVal* newval)
-             : newValCal(newval){
+  explicit PidController(NewVal* newval)
+             : newValCal(newval),
+               kp(0.1),
+               kd(0.01),
+               ki(0.5),
+               errorPrevious(0),
+               result(0){
   } 
   /*
    *  @brief This is also a constructor, but it also defines the gain parameters
